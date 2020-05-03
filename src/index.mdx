@@ -1,0 +1,47 @@
+---
+name: Getting Started
+route: /
+---
+
+# Getting Started
+
+## Installation
+To add Baretheme to your project you will first have to install the package.
+
+```Bash
+npm i -S baretheme/next
+```
+
+or
+
+```Bash
+yarn add baretheme/next
+```
+
+then add the following scripts to your `package.json`:
+```JSON
+  "scripts": {
+    "dev": "baretheme dev",
+    "build": "baretheme build",
+    "start": "baretheme start"
+  },
+```
+
+## Scripts
+When you install the `@baretheme/next` package, Baretheme will install itself as an NPM binary.
+You can run it from NPM via:
+```
+baretheme <command> <flags>
+```
+### Commands
+These commands are available:
+* `dev`: Starts the application in development mode (hot-code reloading, error reporting, etc).
+* `start`: Starts the application in production mode.
+* `build`: Compiles the application for production deployment.
+
+## Content
+By default your content files should be placed within a `content` folder in the root of your project.
+This content folder should contain the following directories:
+* `assets`: contains all files, like images or pdfs.
+* `data`: contains `.json` files for global data.
+* `documents`: contains `.json` files to define your actual content.
